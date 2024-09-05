@@ -1,0 +1,166 @@
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    align-items: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5rem 2rem;
+    justify-content: space-between;
+  }
+  
+  .navLeft {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 1rem;
+  }
+  
+  .logo h1 {
+    font-size: 1.5rem;
+  }
+  
+  .navLinks {
+    list-style: none;
+    display: flex;
+    margin-left: 2rem;
+  }
+  
+  .navLinks li {
+    margin-left: 1.5rem;
+  }
+  
+  .navLinks a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .navLinks a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Search Bar */
+  .searchBar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .searchBar input {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: none;
+    width: 100%;
+    max-width: 400px;
+    
+  }
+  
+  /* Nav Right */
+  .navRight {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    margin-left: 1.5rem;
+  }
+  
+  .icon img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+  }
+  
+  /* Main */
+  .main {
+    flex: 1;
+    padding: 2rem;
+  }
+  
+  /* Product Grid */
+  .productGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  /* Product Card */
+  .productCard {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .productImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .productCard h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+  
+  .productCard p {
+    font-size: 1.2rem;
+    color: #4CAF50;
+  }
+  
+  .orderButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .orderButton:hover {
+    background-color: #45a049;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
