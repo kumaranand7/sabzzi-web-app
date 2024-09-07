@@ -2,6 +2,8 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
+import { AppBar } from '@mui/material';
+import '../app/globals.css';
 
 // GoogleMap component ko dynamically load karenge, SSR ko disable karte hue
 const GoogleMap = dynamic(() => import('./GoogleMap'), { ssr: false });
@@ -18,12 +20,14 @@ export default function Home() {
 
       <div className={styles.container}>
         {/* Navigation Bar */}
+
         <nav className={styles.navbar}>
           <div className={styles.navLeft}>
             <div className={styles.logo}>
               <Image src="/images/logo.jpeg" alt="Store Logo" width={50} height={50} />
               <h1>Sabzzi.com</h1>
             </div>
+            
             <ul className={styles.navLinks}>
               <li><a href="/">Home</a></li>
               <li><a href="#shop">Shop</a></li>
@@ -55,21 +59,21 @@ export default function Home() {
             <div className={styles.productCard}>
               <Image src="/images/veg1.jpg" alt="Tomato" width={150} height={150} className={styles.productImage} />
               <h2>Tomatoes</h2>
-              <p>$2.99 per kg</p>
+              <p>₹29.9 per kg</p>
               <button className={styles.orderButton}>Order Now</button>
             </div>
 
             <div className={styles.productCard}>
               <Image src="/images/veg2.jpeg" alt="Cucumber" width={150} height={150} className={styles.productImage} />
               <h2>Cucumbers</h2>
-              <p>$1.49 per kg</p>
+              <p>₹14.9 per kg</p>
               <button className={styles.orderButton}>Order Now</button>
             </div>
 
             <div className={styles.productCard}>
               <Image src="/images/veg3.png" alt="Apple" width={150} height={150} className={styles.productImage} />
               <h2>Apples</h2>
-              <p>$13.49 per kg</p>
+              <p>₹13.49 per kg</p>
               <button className={styles.orderButton}>Order Now</button>
             </div>
           </section>

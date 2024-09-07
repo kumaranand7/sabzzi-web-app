@@ -1,3 +1,4 @@
+
 /* Container */
 .container {
     display: flex;
@@ -63,43 +64,80 @@
     flex: 1;
     display: flex;
     justify-content: center;
+    align-items: center; /* Centers the input vertically */
+    margin: 1rem; /* Adds some space around the search bar */
   }
   
   .searchBar input {
-    padding: 0.5rem;
-    border-radius: 4px;
-    border: none;
+    padding: 0.75rem 1rem; /* Adds more padding for a better feel */
+    border-radius: 20px; /* Gives the input a rounded look */
+    border: 2px solid #4CAF50; /* Adds a green border to match the vegetable theme */
+    background-color: #F9F9F9; /* A light background color */
     width: 100%;
-    max-width: 400px;
-    
+    max-width: 500px; /* Increased max-width for a larger input */
+    font-size: 1rem; /* Sets a readable font size */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
   }
+  
+  .searchBar input::placeholder {
+    color: #9E9E9E; /* Lighter color for placeholder text */
+  }
+  
+  .searchBar input:focus {
+    border-color: #81C784; /* Changes border color on focus */
+    outline: none; /* Removes the default focus outline */
+    background-color: #FFFFFF; /* Slightly different background on focus */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on focus */
+  }
+  
   
   /* Nav Right */
   .navRight {
     display: flex;
-    align-items: center;
+    align-items: center; /* Centers items vertically */
+    padding: 1rem; /* Adds some padding around the nav items */
+    border-bottom: 2px solid #4CAF50; /* Adds a green border at the bottom */
   }
   
   .icon {
-    margin-left: 1.5rem;
+    display: flex;
+    align-items: center; /* Aligns text and image vertically */
+    margin-left: 1.5rem; /* Adds space between icons */
+    text-decoration: none; /* Removes underline from links */
+    color: #333; /* Sets a dark text color */
+    font-size: 1rem; /* Sets a readable font size */
+    font-weight: 500; /* Makes the text slightly bolder */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition effects */
+  }
+  
+  .icon:hover {
+    color: #fafffa; /* Changes text color on hover */
+    transform: scale(1.1); /* Slightly enlarges the icon on hover */
   }
   
   .icon img {
-    width: 24px;
-    height: 24px;
+    margin-right: 0.5rem; /* Adds space between the icon and text */
   }
   
-  /* Header */
+  
   .header {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 2rem;
+    background-color: #4CAF50; /* Green background to fit the vegetable theme */
+    color: white; /* White text color for contrast */
+    text-align: center; /* Center-aligns the text */
+    padding: 2rem 1rem; /* Adds padding around the text */
+    border-bottom: 4px solid #81C784; /* Adds a lighter green border for a fresh look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
   }
   
   .header p {
-    font-size: 1.2rem;
+    font-size: 1.4rem; /* Slightly larger font size for emphasis */
+    font-family: 'Arial', sans-serif; /* Sets a clean, modern font */
+    font-weight: 600; /* Makes the text bold */
+    margin: 0; /* Removes default margin */
+    line-height: 1.5; /* Increases line height for better readability */
   }
+  
   
   /* Main */
   .main {
@@ -118,8 +156,7 @@
   .productCard {
     background: white;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;overflow: hidden;
     text-align: center;
     padding: 1rem;
   }
