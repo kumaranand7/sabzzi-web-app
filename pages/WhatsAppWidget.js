@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 
 

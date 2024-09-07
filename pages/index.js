@@ -2,7 +2,6 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
-import { AppBar } from '@mui/material';
 import '../app/globals.css';
 
 // GoogleMap component ko dynamically load karenge, SSR ko disable karte hue
@@ -29,20 +28,20 @@ export default function Home() {
             </div>
             
             <ul className={styles.navLinks}>
-              <li><a href="/">Home</a></li>
-              <li><a href="#shop">Shop</a></li>
-              <li><a href="#aboutus">About us</a></li>
-              <li><a href="#blog">Blog</a></li>
+              <li>Home</li>
+              <li>Shop</li>
+              <li>About us</li>
+              <li>Blog</li>
             </ul>
           </div>
           <div className={styles.searchBar}>
             <input type="text" placeholder="Search for vegetables..." />
           </div>
           <div className={styles.navRight}>
-            <a href="/login" className={styles.icon}>
+            <a className={styles.icon}>
               <Image src="/images/login.png" alt="Login" width={24} height={24} />Login
             </a>
-            <a href="/cart" className={styles.icon}>
+            <a  className={styles.icon}>
               <Image src="/images/cart2.png" alt="Cart" width={24} height={24} />Cart
             </a>
           </div>
