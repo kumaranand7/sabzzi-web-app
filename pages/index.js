@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css';
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
 import '../app/globals.css';
+import Footer from './Footer';
 
 // GoogleMap component ko dynamically load karenge, SSR ko disable karte hue
 const GoogleMap = dynamic(() => import('./GoogleMap'), { ssr: false });
@@ -83,6 +84,8 @@ export default function Home() {
          <div className={styles.mapContainer}>
           <GoogleMap />
         </div>
+
+        <Footer/>
 
         {/* Footer */}
         <footer className={styles.footer}>
